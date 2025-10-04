@@ -41,7 +41,7 @@ export function TechnicianList() {
               label="Service Type"
               placeholder="All services"
               data={serviceTypes}
-              value={selectedFilters.serviceType}
+              value={selectedFilters.serviceType || null}
               onChange={(value) => 
                 dispatch({ type: 'SET_SERVICE_FILTER', payload: value || '' })
               }
